@@ -5,7 +5,7 @@ Type=Class
 Version=9.85
 @EndOfDesignText@
 #Region Shared Files
-#CustomBuildAction: folders ready, %WINDIR%\System32\Robocopy.exe,"..\..\Shared Files" "..\Files"
+'#CustomBuildAction: folders ready, %WINDIR%\System32\Robocopy.exe,"..\..\Shared Files" "..\Files"
 'Ctrl + click to sync files: ide://run?file=%WINDIR%\System32\Robocopy.exe&args=..\..\Shared+Files&args=..\Files&FilesSync=True
 #End Region
 
@@ -48,6 +48,22 @@ Public Sub B4XPage_Created (Root1 As B4XView)
     
 	personsList.Initialize
 	FetchData
+	
+	'---------------DETAILS TEST WZYTOWKA---------------------------
+	' Przykładowe dane osoby
+	Dim mockPerson As Map
+	mockPerson.Initialize
+	mockPerson.Put("tytul", "dr")
+	mockPerson.Put("imie", "Jan")
+	mockPerson.Put("nazwisko", "Kowalski")
+	mockPerson.Put("pokoj", "101")
+	mockPerson.Put("zaklad", "Zakład Testowy")
+	mockPerson.Put("numer_telefonu", "123-456-789")
+	mockPerson.Put("mail", "jankowalski@amu.edu.pl")
+	' Załaduj dane do strony szczegółów i pokaż ją
+	B4XPages.ShowPage("Details")
+	B4XPages.GetPage("Details").As(details).LoadPerson(mockPerson)
+	'------------------------------------------
     
 End Sub
 
