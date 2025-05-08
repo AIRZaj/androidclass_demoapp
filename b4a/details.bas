@@ -1,8 +1,8 @@
-﻿B4J=true
+﻿B4A=true
 Group=Default Group
 ModulesStructureVersion=1
 Type=Class
-Version=8.5
+Version=13.1
 @EndOfDesignText@
 Sub Class_Globals
 	Private Root As B4XView
@@ -64,14 +64,21 @@ Public Sub LoadPerson(p As Map)
 	phoneNumber=p.Get("telefon")
 End Sub
 
-Sub ImgView1_Click
-	Log("Klik działa")
+Sub MailButton_Click
+	Dim Intent1 As Intent
+	Intent1.Initialize(Intent1.ACTION_VIEW, "mailto:" & lblMail.text)
+	StartActivity(Intent1)
 End Sub
 
-Sub Panel3_Click
-	Log("Klik działa")
+Sub MessageButton_Click
+	Dim Intent1 As Intent
+	Intent1.Initialize(Intent1.ACTION_VIEW, "sms:" & phoneNumber)
+	StartActivity(Intent1)
+End Sub
+Sub Phone_Click
 	Dim p As PhoneCalls
-	StartActivity(p.Call(phoneNumber))
+	Log(phoneNumber)
+	StartActivity(p.call(phoneNumber))
 End Sub
 
 
