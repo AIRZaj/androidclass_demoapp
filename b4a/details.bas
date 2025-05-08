@@ -1,8 +1,8 @@
-﻿B4A=true
+﻿B4J=true
 Group=Default Group
 ModulesStructureVersion=1
 Type=Class
-Version=13.1
+Version=8.5
 @EndOfDesignText@
 Sub Class_Globals
 	Private Root As B4XView
@@ -21,6 +21,7 @@ Sub Class_Globals
 	Private ImgView1 As B4XImageView
 	Private ImgView2 As B4XImageView
 	Private ImgView3 As B4XImageView
+	Private phoneNumber As String
 End Sub
 
 Public Sub Initialize
@@ -58,14 +59,21 @@ Public Sub LoadPerson(p As Map)
 	'lblTitle.Text = $"Tytuł: ${p.Get("tytul")}"$
 	lblName.Text = $"${p.Get("tytul")}. ${p.Get("imie")} ${p.Get("nazwisko")}"$
 	lblDept.Text = $"${p.Get("zaklad")}"$
-			lblRoom.Text = $"${p.Get("pokoj")}"$
+	lblRoom.Text = $"${p.Get("pokoj")}"$
 	lblMail.Text = $"${p.Get("mail")}"$
-	'lblPhone.Text = $"Telefon: ${p.Get("numer_telefonu")}"$
+	phoneNumber=p.Get("telefon")
 End Sub
 
 Sub ImgView1_Click
 	Log("Klik działa")
 End Sub
+
+Sub Panel3_Click
+	Log("Klik działa")
+	Dim p As PhoneCalls
+	StartActivity(p.Call(phoneNumber))
+End Sub
+
 
 'Public Sub LoadPerson(p As Map) - test na chwile wylaczone
 	'Dim info As String
