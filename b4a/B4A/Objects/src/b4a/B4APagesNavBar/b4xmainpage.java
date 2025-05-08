@@ -114,7 +114,7 @@ RDebugUtils.currentLine=589827;
  //BA.debugLineNum = 589827;BA.debugLine="Public Page2 As B4XPage2";
 _page2 = new b4a.B4APagesNavBar.b4xpage2();
 RDebugUtils.currentLine=589828;
- //BA.debugLineNum = 589828;BA.debugLine="Public Details As details";
+ //BA.debugLineNum = 589828;BA.debugLine="Public Details As Details";
 _details = new b4a.B4APagesNavBar.details();
 RDebugUtils.currentLine=589829;
  //BA.debugLineNum = 589829;BA.debugLine="Public Page4 As B4XPage4";

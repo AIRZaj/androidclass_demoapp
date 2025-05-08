@@ -186,7 +186,7 @@ Debug.ShouldStop(256);
 _p = RemoteObject.createNew ("anywheresoftware.b4a.phone.Phone.PhoneCalls");Debug.locals.put("p", _p);
  BA.debugLineNum = 74;BA.debugLine="Log(phoneNumber)";
 Debug.ShouldStop(512);
-details.__c.runVoidMethod ("LogImpl","643122690",__ref.getField(true,"_phonenumber" /*RemoteObject*/ ),0);
+details.__c.runVoidMethod ("LogImpl","81900546",__ref.getField(true,"_phonenumber" /*RemoteObject*/ ),0);
  BA.debugLineNum = 75;BA.debugLine="StartActivity(p.call(phoneNumber))";
 Debug.ShouldStop(1024);
 details.__c.runVoidMethod ("StartActivity",__ref.getField(false, "ba"),(Object)((_p.runMethod(false,"Call",(Object)(__ref.getField(true,"_phonenumber" /*RemoteObject*/ ))))));

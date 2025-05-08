@@ -86,7 +86,6 @@ __ref = this;
 RDebugUtils.currentModule="b4xpage2";
 if (Debug.shouldDelegate(ba, "b4xpage_created", false))
 	 {return ((String) Debug.delegate(ba, "b4xpage_created", new Object[] {_root1}));}
-anywheresoftware.b4a.objects.ButtonWrapper _btn = null;
 anywheresoftware.b4a.objects.ScrollViewWrapper _svpanel = null;
 RDebugUtils.currentLine=983040;
  //BA.debugLineNum = 983040;BA.debugLine="Private Sub B4XPage_Created (Root1 As B4XView)";
@@ -106,46 +105,28 @@ RDebugUtils.currentLine=983048;
  //BA.debugLineNum = 983048;BA.debugLine="Root.Color = xui.Color_White";
 __ref._root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setColor(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_White);
 RDebugUtils.currentLine=983051;
- //BA.debugLineNum = 983051;BA.debugLine="Dim btn As Button";
-_btn = new anywheresoftware.b4a.objects.ButtonWrapper();
-RDebugUtils.currentLine=983052;
- //BA.debugLineNum = 983052;BA.debugLine="btn.Initialize(\"btnUpdate\")";
-_btn.Initialize(ba,"btnUpdate");
+ //BA.debugLineNum = 983051;BA.debugLine="B4XPages.AddMenuItem(Me, \"Aktualizuj\")";
+_b4xpages._addmenuitem /*b4a.B4APagesNavBar.b4xpagesmanager._b4amenuitem*/ (ba,this,(Object)("Aktualizuj"));
 RDebugUtils.currentLine=983053;
- //BA.debugLineNum = 983053;BA.debugLine="btn.Text = \"🔄 Aktualizuj\"";
-_btn.setText(BA.ObjectToCharSequence("🔄 Aktualizuj"));
-RDebugUtils.currentLine=983054;
- //BA.debugLineNum = 983054;BA.debugLine="btn.TextColor = xui.Color_White";
-_btn.setTextColor(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_White);
-RDebugUtils.currentLine=983055;
- //BA.debugLineNum = 983055;BA.debugLine="btn.Color = xui.Color_RGB(0,150,1)";
-_btn.setColor(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_RGB((int) (0),(int) (150),(int) (1)));
-RDebugUtils.currentLine=983056;
- //BA.debugLineNum = 983056;BA.debugLine="btnUpdate = btn";
-__ref._btnupdate /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_btn.getObject()));
-RDebugUtils.currentLine=983057;
- //BA.debugLineNum = 983057;BA.debugLine="Root.AddView(btnUpdate, 150dip, 10dip, 150dip, 40";
-__ref._root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .AddView((android.view.View)(__ref._btnupdate /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getObject()),__c.DipToCurrent((int) (150)),__c.DipToCurrent((int) (10)),__c.DipToCurrent((int) (150)),__c.DipToCurrent((int) (40)));
-RDebugUtils.currentLine=983059;
- //BA.debugLineNum = 983059;BA.debugLine="Dim svPanel As ScrollView";
+ //BA.debugLineNum = 983053;BA.debugLine="Dim svPanel As ScrollView";
 _svpanel = new anywheresoftware.b4a.objects.ScrollViewWrapper();
-RDebugUtils.currentLine=983060;
- //BA.debugLineNum = 983060;BA.debugLine="svPanel.Initialize(80%y)";
+RDebugUtils.currentLine=983054;
+ //BA.debugLineNum = 983054;BA.debugLine="svPanel.Initialize(80%y)";
 _svpanel.Initialize(ba,__c.PerYToCurrent((float) (80),ba));
-RDebugUtils.currentLine=983061;
- //BA.debugLineNum = 983061;BA.debugLine="sv = svPanel";
+RDebugUtils.currentLine=983055;
+ //BA.debugLineNum = 983055;BA.debugLine="sv = svPanel";
 __ref._sv /*anywheresoftware.b4a.objects.ScrollViewWrapper*/  = _svpanel;
-RDebugUtils.currentLine=983062;
- //BA.debugLineNum = 983062;BA.debugLine="Root.AddView(sv, 0, 70dip, 100%x, 80%y - 70dip)";
+RDebugUtils.currentLine=983056;
+ //BA.debugLineNum = 983056;BA.debugLine="Root.AddView(sv, 0, 70dip, 100%x, 80%y - 70dip)";
 __ref._root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .AddView((android.view.View)(__ref._sv /*anywheresoftware.b4a.objects.ScrollViewWrapper*/ .getObject()),(int) (0),__c.DipToCurrent((int) (70)),__c.PerXToCurrent((float) (100),ba),(int) (__c.PerYToCurrent((float) (80),ba)-__c.DipToCurrent((int) (70))));
-RDebugUtils.currentLine=983064;
- //BA.debugLineNum = 983064;BA.debugLine="personsList.Initialize";
+RDebugUtils.currentLine=983058;
+ //BA.debugLineNum = 983058;BA.debugLine="personsList.Initialize";
 __ref._personslist /*anywheresoftware.b4a.objects.collections.List*/ .Initialize();
-RDebugUtils.currentLine=983065;
- //BA.debugLineNum = 983065;BA.debugLine="FetchData";
+RDebugUtils.currentLine=983059;
+ //BA.debugLineNum = 983059;BA.debugLine="FetchData";
 __ref._fetchdata /*String*/ (null);
-RDebugUtils.currentLine=983067;
- //BA.debugLineNum = 983067;BA.debugLine="End Sub";
+RDebugUtils.currentLine=983061;
+ //BA.debugLineNum = 983061;BA.debugLine="End Sub";
 return "";
 }
 public String  _fetchdata(b4a.B4APagesNavBar.b4xpage2 __ref) throws Exception{
@@ -163,6 +144,24 @@ RDebugUtils.currentLine=1179650;
 __ref._xhttp /*b4a.B4APagesNavBar.httpjob*/ ._download /*String*/ (null,"https://grupa2.android.mzelent.pl/persons/");
 RDebugUtils.currentLine=1179651;
  //BA.debugLineNum = 1179651;BA.debugLine="End Sub";
+return "";
+}
+public String  _b4xpage_menuclick(b4a.B4APagesNavBar.b4xpage2 __ref,String _tag) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xpage2";
+if (Debug.shouldDelegate(ba, "b4xpage_menuclick", false))
+	 {return ((String) Debug.delegate(ba, "b4xpage_menuclick", new Object[] {_tag}));}
+RDebugUtils.currentLine=44695552;
+ //BA.debugLineNum = 44695552;BA.debugLine="Sub B4XPage_MenuClick(Tag As String)";
+RDebugUtils.currentLine=44695553;
+ //BA.debugLineNum = 44695553;BA.debugLine="If Tag=\"Aktualizuj\" Then";
+if ((_tag).equals("Aktualizuj")) { 
+RDebugUtils.currentLine=44695554;
+ //BA.debugLineNum = 44695554;BA.debugLine="FetchData";
+__ref._fetchdata /*String*/ (null);
+ };
+RDebugUtils.currentLine=44695556;
+ //BA.debugLineNum = 44695556;BA.debugLine="End Sub";
 return "";
 }
 public String  _card_click(b4a.B4APagesNavBar.b4xpage2 __ref) throws Exception{

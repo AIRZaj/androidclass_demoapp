@@ -178,19 +178,19 @@ RDebugUtils.currentModule="details";
 if (Debug.shouldDelegate(ba, "mailbutton_click", false))
 	 {return ((String) Debug.delegate(ba, "mailbutton_click", null));}
 anywheresoftware.b4a.objects.IntentWrapper _intent1 = null;
-RDebugUtils.currentLine=45940736;
- //BA.debugLineNum = 45940736;BA.debugLine="Sub MailButton_Click";
-RDebugUtils.currentLine=45940737;
- //BA.debugLineNum = 45940737;BA.debugLine="Dim Intent1 As Intent";
+RDebugUtils.currentLine=1769472;
+ //BA.debugLineNum = 1769472;BA.debugLine="Sub MailButton_Click";
+RDebugUtils.currentLine=1769473;
+ //BA.debugLineNum = 1769473;BA.debugLine="Dim Intent1 As Intent";
 _intent1 = new anywheresoftware.b4a.objects.IntentWrapper();
-RDebugUtils.currentLine=45940738;
- //BA.debugLineNum = 45940738;BA.debugLine="Intent1.Initialize(Intent1.ACTION_VIEW, \"mailto:\"";
+RDebugUtils.currentLine=1769474;
+ //BA.debugLineNum = 1769474;BA.debugLine="Intent1.Initialize(Intent1.ACTION_VIEW, \"mailto:\"";
 _intent1.Initialize(_intent1.ACTION_VIEW,"mailto:"+__ref._lblmail /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getText());
-RDebugUtils.currentLine=45940739;
- //BA.debugLineNum = 45940739;BA.debugLine="StartActivity(Intent1)";
+RDebugUtils.currentLine=1769475;
+ //BA.debugLineNum = 1769475;BA.debugLine="StartActivity(Intent1)";
 __c.StartActivity(ba,(Object)(_intent1.getObject()));
-RDebugUtils.currentLine=45940740;
- //BA.debugLineNum = 45940740;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1769476;
+ //BA.debugLineNum = 1769476;BA.debugLine="End Sub";
 return "";
 }
 public String  _messagebutton_click(b4a.B4APagesNavBar.details __ref) throws Exception{
@@ -199,19 +199,19 @@ RDebugUtils.currentModule="details";
 if (Debug.shouldDelegate(ba, "messagebutton_click", false))
 	 {return ((String) Debug.delegate(ba, "messagebutton_click", null));}
 anywheresoftware.b4a.objects.IntentWrapper _intent1 = null;
-RDebugUtils.currentLine=44236800;
- //BA.debugLineNum = 44236800;BA.debugLine="Sub MessageButton_Click";
-RDebugUtils.currentLine=44236801;
- //BA.debugLineNum = 44236801;BA.debugLine="Dim Intent1 As Intent";
+RDebugUtils.currentLine=1835008;
+ //BA.debugLineNum = 1835008;BA.debugLine="Sub MessageButton_Click";
+RDebugUtils.currentLine=1835009;
+ //BA.debugLineNum = 1835009;BA.debugLine="Dim Intent1 As Intent";
 _intent1 = new anywheresoftware.b4a.objects.IntentWrapper();
-RDebugUtils.currentLine=44236802;
- //BA.debugLineNum = 44236802;BA.debugLine="Intent1.Initialize(Intent1.ACTION_VIEW, \"sms:\" &";
+RDebugUtils.currentLine=1835010;
+ //BA.debugLineNum = 1835010;BA.debugLine="Intent1.Initialize(Intent1.ACTION_VIEW, \"sms:\" &";
 _intent1.Initialize(_intent1.ACTION_VIEW,"sms:"+__ref._phonenumber /*String*/ );
-RDebugUtils.currentLine=44236803;
- //BA.debugLineNum = 44236803;BA.debugLine="StartActivity(Intent1)";
+RDebugUtils.currentLine=1835011;
+ //BA.debugLineNum = 1835011;BA.debugLine="StartActivity(Intent1)";
 __c.StartActivity(ba,(Object)(_intent1.getObject()));
-RDebugUtils.currentLine=44236804;
- //BA.debugLineNum = 44236804;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1835012;
+ //BA.debugLineNum = 1835012;BA.debugLine="End Sub";
 return "";
 }
 public String  _phone_click(b4a.B4APagesNavBar.details __ref) throws Exception{
@@ -220,19 +220,19 @@ RDebugUtils.currentModule="details";
 if (Debug.shouldDelegate(ba, "phone_click", false))
 	 {return ((String) Debug.delegate(ba, "phone_click", null));}
 anywheresoftware.b4a.phone.Phone.PhoneCalls _p = null;
-RDebugUtils.currentLine=43122688;
- //BA.debugLineNum = 43122688;BA.debugLine="Sub Phone_Click";
-RDebugUtils.currentLine=43122689;
- //BA.debugLineNum = 43122689;BA.debugLine="Dim p As PhoneCalls";
+RDebugUtils.currentLine=1900544;
+ //BA.debugLineNum = 1900544;BA.debugLine="Sub Phone_Click";
+RDebugUtils.currentLine=1900545;
+ //BA.debugLineNum = 1900545;BA.debugLine="Dim p As PhoneCalls";
 _p = new anywheresoftware.b4a.phone.Phone.PhoneCalls();
-RDebugUtils.currentLine=43122690;
- //BA.debugLineNum = 43122690;BA.debugLine="Log(phoneNumber)";
-__c.LogImpl("643122690",__ref._phonenumber /*String*/ ,0);
-RDebugUtils.currentLine=43122691;
- //BA.debugLineNum = 43122691;BA.debugLine="StartActivity(p.call(phoneNumber))";
+RDebugUtils.currentLine=1900546;
+ //BA.debugLineNum = 1900546;BA.debugLine="Log(phoneNumber)";
+__c.LogImpl("81900546",__ref._phonenumber /*String*/ ,0);
+RDebugUtils.currentLine=1900547;
+ //BA.debugLineNum = 1900547;BA.debugLine="StartActivity(p.call(phoneNumber))";
 __c.StartActivity(ba,(Object)(_p.Call(__ref._phonenumber /*String*/ )));
-RDebugUtils.currentLine=43122692;
- //BA.debugLineNum = 43122692;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1900548;
+ //BA.debugLineNum = 1900548;BA.debugLine="End Sub";
 return "";
 }
 }

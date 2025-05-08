@@ -48,19 +48,19 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="navbar";
 if (Debug.shouldDelegate(ba, "initialize", false))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_parent}));}
-RDebugUtils.currentLine=2162688;
- //BA.debugLineNum = 2162688;BA.debugLine="Public Sub Initialize(Parent As B4XView)";
-RDebugUtils.currentLine=2162689;
- //BA.debugLineNum = 2162689;BA.debugLine="pnlParent = Parent";
+RDebugUtils.currentLine=2228224;
+ //BA.debugLineNum = 2228224;BA.debugLine="Public Sub Initialize(Parent As B4XView)";
+RDebugUtils.currentLine=2228225;
+ //BA.debugLineNum = 2228225;BA.debugLine="pnlParent = Parent";
 __ref._pnlparent /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = _parent;
-RDebugUtils.currentLine=2162691;
- //BA.debugLineNum = 2162691;BA.debugLine="MP = B4XPages.MainPage";
+RDebugUtils.currentLine=2228227;
+ //BA.debugLineNum = 2228227;BA.debugLine="MP = B4XPages.MainPage";
 __ref._mp /*b4a.B4APagesNavBar.b4xmainpage*/  = _b4xpages._mainpage /*b4a.B4APagesNavBar.b4xmainpage*/ (ba);
-RDebugUtils.currentLine=2162692;
- //BA.debugLineNum = 2162692;BA.debugLine="pnlParent.LoadLayout(\"NavBar\")";
+RDebugUtils.currentLine=2228228;
+ //BA.debugLineNum = 2228228;BA.debugLine="pnlParent.LoadLayout(\"NavBar\")";
 __ref._pnlparent /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .LoadLayout("NavBar",ba);
-RDebugUtils.currentLine=2162693;
- //BA.debugLineNum = 2162693;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2228229;
+ //BA.debugLineNum = 2228229;BA.debugLine="End Sub";
 return "";
 }
 public String  _btnnavbar_click(b4a.B4APagesNavBar.navbar __ref) throws Exception{
@@ -70,72 +70,72 @@ if (Debug.shouldDelegate(ba, "btnnavbar_click", false))
 	 {return ((String) Debug.delegate(ba, "btnnavbar_click", null));}
 anywheresoftware.b4a.objects.B4XViewWrapper _btn = null;
 int _index = 0;
-RDebugUtils.currentLine=2228224;
- //BA.debugLineNum = 2228224;BA.debugLine="Private Sub btnNavBar_Click";
-RDebugUtils.currentLine=2228225;
- //BA.debugLineNum = 2228225;BA.debugLine="Private btn As B4XView";
+RDebugUtils.currentLine=2293760;
+ //BA.debugLineNum = 2293760;BA.debugLine="Private Sub btnNavBar_Click";
+RDebugUtils.currentLine=2293761;
+ //BA.debugLineNum = 2293761;BA.debugLine="Private btn As B4XView";
 _btn = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=2228226;
- //BA.debugLineNum = 2228226;BA.debugLine="Private Index As Int";
+RDebugUtils.currentLine=2293762;
+ //BA.debugLineNum = 2293762;BA.debugLine="Private Index As Int";
 _index = 0;
-RDebugUtils.currentLine=2228228;
- //BA.debugLineNum = 2228228;BA.debugLine="btn = Sender";
+RDebugUtils.currentLine=2293764;
+ //BA.debugLineNum = 2293764;BA.debugLine="btn = Sender";
 _btn = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(__c.Sender(ba)));
-RDebugUtils.currentLine=2228229;
- //BA.debugLineNum = 2228229;BA.debugLine="Index = btn.Tag";
+RDebugUtils.currentLine=2293765;
+ //BA.debugLineNum = 2293765;BA.debugLine="Index = btn.Tag";
 _index = (int)(BA.ObjectToNumber(_btn.getTag()));
-RDebugUtils.currentLine=2228233;
- //BA.debugLineNum = 2228233;BA.debugLine="Select Index";
+RDebugUtils.currentLine=2293769;
+ //BA.debugLineNum = 2293769;BA.debugLine="Select Index";
 switch (_index) {
 case 1: {
-RDebugUtils.currentLine=2228235;
- //BA.debugLineNum = 2228235;BA.debugLine="MP.CurrentPage = MP";
+RDebugUtils.currentLine=2293771;
+ //BA.debugLineNum = 2293771;BA.debugLine="MP.CurrentPage = MP";
 __ref._mp /*b4a.B4APagesNavBar.b4xmainpage*/ ._currentpage /*Object*/  = (Object)(__ref._mp /*b4a.B4APagesNavBar.b4xmainpage*/ );
-RDebugUtils.currentLine=2228236;
- //BA.debugLineNum = 2228236;BA.debugLine="B4XPages.ShowPageAndRemovePreviousPages(\"MainPa";
+RDebugUtils.currentLine=2293772;
+ //BA.debugLineNum = 2293772;BA.debugLine="B4XPages.ShowPageAndRemovePreviousPages(\"MainPa";
 _b4xpages._showpageandremovepreviouspages /*String*/ (ba,"MainPage");
  break; }
 case 2: {
-RDebugUtils.currentLine=2228238;
- //BA.debugLineNum = 2228238;BA.debugLine="MP.CurrentPage = MP.Page2";
+RDebugUtils.currentLine=2293774;
+ //BA.debugLineNum = 2293774;BA.debugLine="MP.CurrentPage = MP.Page2";
 __ref._mp /*b4a.B4APagesNavBar.b4xmainpage*/ ._currentpage /*Object*/  = (Object)(__ref._mp /*b4a.B4APagesNavBar.b4xmainpage*/ ._page2 /*b4a.B4APagesNavBar.b4xpage2*/ );
-RDebugUtils.currentLine=2228239;
- //BA.debugLineNum = 2228239;BA.debugLine="B4XPages.ShowPageAndRemovePreviousPages(\"Page 2";
+RDebugUtils.currentLine=2293775;
+ //BA.debugLineNum = 2293775;BA.debugLine="B4XPages.ShowPageAndRemovePreviousPages(\"Page 2";
 _b4xpages._showpageandremovepreviouspages /*String*/ (ba,"Page 2");
  break; }
 case 4: {
-RDebugUtils.currentLine=2228241;
- //BA.debugLineNum = 2228241;BA.debugLine="MP.CurrentPage = MP.Page4";
+RDebugUtils.currentLine=2293777;
+ //BA.debugLineNum = 2293777;BA.debugLine="MP.CurrentPage = MP.Page4";
 __ref._mp /*b4a.B4APagesNavBar.b4xmainpage*/ ._currentpage /*Object*/  = (Object)(__ref._mp /*b4a.B4APagesNavBar.b4xmainpage*/ ._page4 /*b4a.B4APagesNavBar.b4xpage4*/ );
-RDebugUtils.currentLine=2228242;
- //BA.debugLineNum = 2228242;BA.debugLine="B4XPages.ShowPageAndRemovePreviousPages(\"Page 4";
+RDebugUtils.currentLine=2293778;
+ //BA.debugLineNum = 2293778;BA.debugLine="B4XPages.ShowPageAndRemovePreviousPages(\"Page 4";
 _b4xpages._showpageandremovepreviouspages /*String*/ (ba,"Page 4");
  break; }
 }
 ;
-RDebugUtils.currentLine=2228244;
- //BA.debugLineNum = 2228244;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2293780;
+ //BA.debugLineNum = 2293780;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.B4APagesNavBar.navbar __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="navbar";
-RDebugUtils.currentLine=2097152;
- //BA.debugLineNum = 2097152;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=2097154;
- //BA.debugLineNum = 2097154;BA.debugLine="Private xui As XUI";
+RDebugUtils.currentLine=2162688;
+ //BA.debugLineNum = 2162688;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=2162690;
+ //BA.debugLineNum = 2162690;BA.debugLine="Private xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=2097156;
- //BA.debugLineNum = 2097156;BA.debugLine="Private pnlParent As B4XView";
+RDebugUtils.currentLine=2162692;
+ //BA.debugLineNum = 2162692;BA.debugLine="Private pnlParent As B4XView";
 _pnlparent = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=2097157;
- //BA.debugLineNum = 2097157;BA.debugLine="Private btnMainPage As B4XView";
+RDebugUtils.currentLine=2162693;
+ //BA.debugLineNum = 2162693;BA.debugLine="Private btnMainPage As B4XView";
 _btnmainpage = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=2097158;
- //BA.debugLineNum = 2097158;BA.debugLine="Private MP As B4XMainPage";
+RDebugUtils.currentLine=2162694;
+ //BA.debugLineNum = 2162694;BA.debugLine="Private MP As B4XMainPage";
 _mp = new b4a.B4APagesNavBar.b4xmainpage();
-RDebugUtils.currentLine=2097159;
- //BA.debugLineNum = 2097159;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2162695;
+ //BA.debugLineNum = 2162695;BA.debugLine="End Sub";
 return "";
 }
 }

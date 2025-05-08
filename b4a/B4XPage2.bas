@@ -36,13 +36,7 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	Root.Color = xui.Color_White
 	
 	' Poprawne tworzenie Button
-	Dim btn As Button
-	btn.Initialize("btnUpdate")
-	btn.Text = "🔄 Aktualizuj"
-	btn.TextColor = xui.Color_White
-	btn.Color = xui.Color_RGB(0,150,1)
-	btnUpdate = btn
-	Root.AddView(btnUpdate, 150dip, 10dip, 150dip, 40dip)
+	B4XPages.AddMenuItem(Me, "Aktualizuj")
     
 	Dim svPanel As ScrollView
 	svPanel.Initialize(80%y)
@@ -53,7 +47,11 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	FetchData
     
 End Sub
-
+	Sub B4XPage_MenuClick(Tag As String)
+		If Tag="Aktualizuj" Then
+			FetchData
+		End If
+End Sub
 Private Sub AddClickEvent(v As B4XView)
 	Dim jo As JavaObject = v
 	jo.RunMethod("setOnClickListener", Array As Object(Me, "HandleClick"))

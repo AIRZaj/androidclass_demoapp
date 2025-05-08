@@ -3751,7 +3751,7 @@ _sb.runVoidMethod ("Append",(Object)(_tc.getField(false,"Buffer" /*RemoteObject*
 ;
  BA.debugLineNum = 1196;BA.debugLine="Log(sb.ToString)";
 Debug.JustUpdateDeviceLine();
-bctextengine.__c.runVoidMethod ("LogImpl","918939910",_sb.runMethod(true,"ToString"),0);
+bctextengine.__c.runVoidMethod ("LogImpl","919005446",_sb.runMethod(true,"ToString"),0);
  BA.debugLineNum = 1197;BA.debugLine="End Sub";
 Debug.JustUpdateDeviceLine();
 return RemoteObject.createImmutable("");
