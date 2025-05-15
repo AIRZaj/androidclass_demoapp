@@ -17,6 +17,9 @@ Sub Class_Globals
 	Private xHttp As HttpJob
 	Private personsList As List
 	Private Details As Details
+	
+	Private EditText1 As B4XView
+	Private Button1 As B4XView
 End Sub
 
 'You can add more parameters here.
@@ -38,6 +41,7 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	' Poprawne tworzenie Button
 	B4XPages.AddMenuItem(Me, "Aktualizuj")
     
+	
 	Dim svPanel As ScrollView
 	svPanel.Initialize(80%y)
 	sv = svPanel
@@ -168,6 +172,93 @@ Sub card_Click
     
 End Sub
 
+Private Sub Button1_Click
+	Dim searchText As String = EditText1.Text
+	sv.Panel.RemoveAllViews
+    
+	Dim filteredList As List
+	filteredList.Initialize
+
+	If searchText = "" Then
+		filteredList = personsList
+	Else
+		For Each person As Map In personsList
+			Dim imie As String = person.Get("imie")
+			Dim nazwisko As String = person.Get("nazwisko")
+			If imie == searchText Or nazwisko == searchText Then
+				filteredList.Add(person)
+			End If
+		Next
+	End If
+    
+	sv.Panel.Height = filteredList.Size * 130dip
+    
+	For i = 0 To filteredList.Size - 1
+		Dim item As Map = filteredList.Get(i)
+
+		' Karta
+		Dim card As Panel
+		card.Initialize("card")
+		card.Tag = item ' Cały map przekazujemy do szczegółów
+		card.Color = Colors.White
+		sv.Panel.AddView(card, 10%x, i * 130dip, 90%x, 120dip)
+
+		' Dane
+		Dim lblName As Label
+		lblName.Initialize("")
+		lblName.Text = item.Get("tytul") & " " & item.Get("imie") & " " & item.Get("nazwisko")
+		lblName.TextSize = 18
+		lblName.TextColor = Colors.Black
+		lblName.Typeface = Typeface.DEFAULT_BOLD
+		card.AddView(lblName, 10dip, 10dip, 80%x, 30dip)
+
+		Dim lblDetails As Label
+		lblDetails.Initialize("")
+		lblDetails.Text = "Pokój: " & item.Get("pokoj") & " | Budynek: " & item.Get("budynek")
+		lblDetails.TextSize = 14
+		lblDetails.TextColor = Colors.Gray
+		card.AddView(lblDetails, 10dip, 35dip, 80%x, 20dip)
+
+		Dim lblPhone As Label
+		lblPhone.Initialize("")
+		lblPhone.Text = "📞 " & item.Get("telefon")
+		lblPhone.TextSize = 14
+		lblPhone.TextColor = Colors.Blue
+		'lblPhone.Tag = item.Get("telefon")
+		card.AddView(lblPhone, 10dip, 50dip, 80%x, 20dip)
+			
+		Dim lblMail As Label
+		lblMail.Initialize("")
+		lblMail.Text = "📧 " & item.Get("mail")
+		lblMail.TextSize = 14
+		lblMail.TextColor = Colors.Blue
+		'lblMail.Tag = item.Get("mail")
+		card.AddView(lblMail, 10dip, 65dip, 80%x, 20dip)
+			
+		Dim lblKon As Label
+		lblKon.Initialize("")
+		lblKon.Text = "🧑‍🤝‍🧑 " & item.Get("konsultacje")
+		lblKon.TextSize = 14
+		lblKon.TextColor = Colors.Blue
+		'lblKon.Tag = item.Get("konsultacje")
+		card.AddView(lblKon, 10dip, 80dip, 80%x, 20dip)
+			
+		Dim lblUSOS As Label
+		lblUSOS.Initialize("")
+		lblUSOS.Text = "💼 " & item.Get("link_do_serwisu_usos")
+		lblUSOS.TextSize = 14
+		lblUSOS.TextColor = Colors.Blue
+		lblUSOS.Tag = item.Get("link_do_serwisu_usos")
+		card.AddView(lblUSOS , 10dip, 95dip, 80%x, 20dip)
+
+		' Styl
+		Dim cd As ColorDrawable
+		cd.Initialize(Colors.White, 20dip)
+		card.Background = cd
+		card.Elevation = 5dip
+	Next
+    
+End Sub
 
 Private Sub CreateCard(item As Map, idx As Int) As B4XView
 	Dim pnl As B4XView = xui.CreatePanel("")
