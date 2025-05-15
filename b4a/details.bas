@@ -21,6 +21,7 @@ Sub Class_Globals
 	Private ImgView1 As B4XImageView
 	Private ImgView2 As B4XImageView
 	Private ImgView3 As B4XImageView
+	Private phoneNumber As String
 End Sub
 
 Public Sub Initialize
@@ -58,14 +59,28 @@ Public Sub LoadPerson(p As Map)
 	'lblTitle.Text = $"Tytuł: ${p.Get("tytul")}"$
 	lblName.Text = $"${p.Get("tytul")}. ${p.Get("imie")} ${p.Get("nazwisko")}"$
 	lblDept.Text = $"${p.Get("zaklad")}"$
-			lblRoom.Text = $"${p.Get("pokoj")}"$
+	lblRoom.Text = $"${p.Get("pokoj")}"$
 	lblMail.Text = $"${p.Get("mail")}"$
-	'lblPhone.Text = $"Telefon: ${p.Get("numer_telefonu")}"$
+	phoneNumber=p.Get("telefon")
 End Sub
 
-Sub ImgView1_Click
-	Log("Klik działa")
+Sub MailButton_Click
+	Dim Intent1 As Intent
+	Intent1.Initialize(Intent1.ACTION_VIEW, "mailto:" & lblMail.text)
+	StartActivity(Intent1)
 End Sub
+
+Sub MessageButton_Click
+	Dim Intent1 As Intent
+	Intent1.Initialize(Intent1.ACTION_VIEW, "sms:" & phoneNumber)
+	StartActivity(Intent1)
+End Sub
+Sub Phone_Click
+	Dim p As PhoneCalls
+	Log(phoneNumber)
+	StartActivity(p.call(phoneNumber))
+End Sub
+
 
 'Public Sub LoadPerson(p As Map) - test na chwile wylaczone
 	'Dim info As String
