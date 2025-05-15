@@ -19,6 +19,6 @@ ModuleClosedNodes3=
 ModuleClosedNodes4=
 ModuleClosedNodes5=
 ModuleClosedNodes6=
-NavigationStack=Details,Class_Globals,0,0,Wizualny projektant,detail2.bal,-100,6,Details,MailButton_Click,62,0,Details,MessageButton_Click,68,6,Details,Phone_Click,72,6,B4XPage2,Class_Globals,0,0,B4XPage2,B4XPage_MenuClick,52,6,Wizualny projektant,MainPage.bal,-100,2,Wizualny projektant,Page2.bal,-100,2,B4XPage2,B4XPage_Created,32,6
+NavigationStack=B4XPage2,FetchData,67,0,B4XPage2,Initialize,19,0,B4XPage2,B4XPage_MenuClick,51,6,B4XPage2,card_Click,170,0,B4XPage2,Class_Globals,14,0,B4XPage2,B4XPage_Created,36,6,B4XPage2,ParseJSON,91,0,B4XPage2,CreateCard,263,0,Wizualny projektant,page2.bal,-100,6,B4XPage2,Button1_Click,191,0
 SelectedBuild=0
 VisibleModules=1,2,4,3,5,6
