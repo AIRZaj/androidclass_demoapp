@@ -54,13 +54,13 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "load", true))
 	 {return ((String) Debug.delegate(ba, "load", new Object[] {_dir,_filename}));}
-RDebugUtils.currentLine=30998528;
- //BA.debugLineNum = 30998528;BA.debugLine="Public Sub Load (Dir As String, FileName As String";
-RDebugUtils.currentLine=30998530;
- //BA.debugLineNum = 30998530;BA.debugLine="setBitmap(LoadBitmapSample(Dir, FileName, mBase.W";
+RDebugUtils.currentLine=31064064;
+ //BA.debugLineNum = 31064064;BA.debugLine="Public Sub Load (Dir As String, FileName As String";
+RDebugUtils.currentLine=31064066;
+ //BA.debugLineNum = 31064066;BA.debugLine="setBitmap(LoadBitmapSample(Dir, FileName, mBase.W";
 __ref._setbitmap /*String*/ (null,(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(__c.LoadBitmapSample(_dir,_filename,__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth(),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight()).getObject())));
-RDebugUtils.currentLine=30998534;
- //BA.debugLineNum = 30998534;BA.debugLine="End Sub";
+RDebugUtils.currentLine=31064070;
+ //BA.debugLineNum = 31064070;BA.debugLine="End Sub";
 return "";
 }
 public String  _base_resize(b4a.B4APagesNavBar.b4ximageview __ref,double _width,double _height) throws Exception{
@@ -68,13 +68,13 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "base_resize", true))
 	 {return ((String) Debug.delegate(ba, "base_resize", new Object[] {_width,_height}));}
-RDebugUtils.currentLine=30474240;
- //BA.debugLineNum = 30474240;BA.debugLine="Private Sub Base_Resize (Width As Double, Height A";
-RDebugUtils.currentLine=30474241;
- //BA.debugLineNum = 30474241;BA.debugLine="Update";
+RDebugUtils.currentLine=30539776;
+ //BA.debugLineNum = 30539776;BA.debugLine="Private Sub Base_Resize (Width As Double, Height A";
+RDebugUtils.currentLine=30539777;
+ //BA.debugLineNum = 30539777;BA.debugLine="Update";
 __ref._update /*String*/ (null);
-RDebugUtils.currentLine=30474242;
- //BA.debugLineNum = 30474242;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30539778;
+ //BA.debugLineNum = 30539778;BA.debugLine="End Sub";
 return "";
 }
 public String  _update(b4a.B4APagesNavBar.b4ximageview __ref) throws Exception{
@@ -86,133 +86,133 @@ float _imageviewwidth = 0f;
 float _imageviewheight = 0f;
 float _bmpratio = 0f;
 float _r = 0f;
-RDebugUtils.currentLine=30932992;
- //BA.debugLineNum = 30932992;BA.debugLine="Public Sub Update";
-RDebugUtils.currentLine=30932993;
- //BA.debugLineNum = 30932993;BA.debugLine="If mBitmap.IsInitialized = False Then Return";
+RDebugUtils.currentLine=30998528;
+ //BA.debugLineNum = 30998528;BA.debugLine="Public Sub Update";
+RDebugUtils.currentLine=30998529;
+ //BA.debugLineNum = 30998529;BA.debugLine="If mBitmap.IsInitialized = False Then Return";
 if (__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .IsInitialized()==__c.False) { 
 if (true) return "";};
-RDebugUtils.currentLine=30932994;
- //BA.debugLineNum = 30932994;BA.debugLine="UpdateClip";
+RDebugUtils.currentLine=30998530;
+ //BA.debugLineNum = 30998530;BA.debugLine="UpdateClip";
 __ref._updateclip /*String*/ (null);
-RDebugUtils.currentLine=30932995;
- //BA.debugLineNum = 30932995;BA.debugLine="Dim ImageViewWidth, ImageViewHeight As Float";
+RDebugUtils.currentLine=30998531;
+ //BA.debugLineNum = 30998531;BA.debugLine="Dim ImageViewWidth, ImageViewHeight As Float";
 _imageviewwidth = 0f;
 _imageviewheight = 0f;
-RDebugUtils.currentLine=30932996;
- //BA.debugLineNum = 30932996;BA.debugLine="Dim bmpRatio As Float = mBitmap.Width / mBitmap.H";
+RDebugUtils.currentLine=30998532;
+ //BA.debugLineNum = 30998532;BA.debugLine="Dim bmpRatio As Float = mBitmap.Width / mBitmap.H";
 _bmpratio = (float) (__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getWidth()/(double)__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getHeight());
-RDebugUtils.currentLine=30932997;
- //BA.debugLineNum = 30932997;BA.debugLine="Select mResizeMode";
+RDebugUtils.currentLine=30998533;
+ //BA.debugLineNum = 30998533;BA.debugLine="Select mResizeMode";
 switch (BA.switchObjectToInt(__ref._mresizemode /*String*/ ,"FILL","FIT","FILL_WIDTH","FILL_HEIGHT","FILL_NO_DISTORTIONS","NONE")) {
 case 0: {
-RDebugUtils.currentLine=30932999;
- //BA.debugLineNum = 30932999;BA.debugLine="ImageViewWidth = mBase.Width";
+RDebugUtils.currentLine=30998535;
+ //BA.debugLineNum = 30998535;BA.debugLine="ImageViewWidth = mBase.Width";
 _imageviewwidth = (float) (__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth());
-RDebugUtils.currentLine=30933000;
- //BA.debugLineNum = 30933000;BA.debugLine="ImageViewHeight = mBase.Height";
+RDebugUtils.currentLine=30998536;
+ //BA.debugLineNum = 30998536;BA.debugLine="ImageViewHeight = mBase.Height";
 _imageviewheight = (float) (__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight());
  break; }
 case 1: {
-RDebugUtils.currentLine=30933002;
- //BA.debugLineNum = 30933002;BA.debugLine="Dim r As Float = Min(mBase.Width / mBitmap.Widt";
+RDebugUtils.currentLine=30998538;
+ //BA.debugLineNum = 30998538;BA.debugLine="Dim r As Float = Min(mBase.Width / mBitmap.Widt";
 _r = (float) (__c.Min(__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth()/(double)__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getWidth(),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight()/(double)__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getHeight()));
-RDebugUtils.currentLine=30933003;
- //BA.debugLineNum = 30933003;BA.debugLine="ImageViewWidth = mBitmap.Width * r";
+RDebugUtils.currentLine=30998539;
+ //BA.debugLineNum = 30998539;BA.debugLine="ImageViewWidth = mBitmap.Width * r";
 _imageviewwidth = (float) (__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getWidth()*_r);
-RDebugUtils.currentLine=30933004;
- //BA.debugLineNum = 30933004;BA.debugLine="ImageViewHeight = mBitmap.Height * r";
+RDebugUtils.currentLine=30998540;
+ //BA.debugLineNum = 30998540;BA.debugLine="ImageViewHeight = mBitmap.Height * r";
 _imageviewheight = (float) (__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getHeight()*_r);
  break; }
 case 2: {
-RDebugUtils.currentLine=30933006;
- //BA.debugLineNum = 30933006;BA.debugLine="ImageViewWidth = mBase.Width";
+RDebugUtils.currentLine=30998542;
+ //BA.debugLineNum = 30998542;BA.debugLine="ImageViewWidth = mBase.Width";
 _imageviewwidth = (float) (__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth());
-RDebugUtils.currentLine=30933007;
- //BA.debugLineNum = 30933007;BA.debugLine="ImageViewHeight = ImageViewWidth / bmpRatio";
+RDebugUtils.currentLine=30998543;
+ //BA.debugLineNum = 30998543;BA.debugLine="ImageViewHeight = ImageViewWidth / bmpRatio";
 _imageviewheight = (float) (_imageviewwidth/(double)_bmpratio);
  break; }
 case 3: {
-RDebugUtils.currentLine=30933009;
- //BA.debugLineNum = 30933009;BA.debugLine="ImageViewHeight = mBase.Height";
+RDebugUtils.currentLine=30998545;
+ //BA.debugLineNum = 30998545;BA.debugLine="ImageViewHeight = mBase.Height";
 _imageviewheight = (float) (__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight());
-RDebugUtils.currentLine=30933010;
- //BA.debugLineNum = 30933010;BA.debugLine="ImageViewWidth = ImageViewHeight * bmpRatio";
+RDebugUtils.currentLine=30998546;
+ //BA.debugLineNum = 30998546;BA.debugLine="ImageViewWidth = ImageViewHeight * bmpRatio";
 _imageviewwidth = (float) (_imageviewheight*_bmpratio);
  break; }
 case 4: {
-RDebugUtils.currentLine=30933012;
- //BA.debugLineNum = 30933012;BA.debugLine="Dim r As Float = Max(mBase.Width / mBitmap.Widt";
+RDebugUtils.currentLine=30998548;
+ //BA.debugLineNum = 30998548;BA.debugLine="Dim r As Float = Max(mBase.Width / mBitmap.Widt";
 _r = (float) (__c.Max(__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth()/(double)__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getWidth(),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight()/(double)__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getHeight()));
-RDebugUtils.currentLine=30933013;
- //BA.debugLineNum = 30933013;BA.debugLine="ImageViewWidth = mBitmap.Width * r";
+RDebugUtils.currentLine=30998549;
+ //BA.debugLineNum = 30998549;BA.debugLine="ImageViewWidth = mBitmap.Width * r";
 _imageviewwidth = (float) (__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getWidth()*_r);
-RDebugUtils.currentLine=30933014;
- //BA.debugLineNum = 30933014;BA.debugLine="ImageViewHeight = mBitmap.Height * r";
+RDebugUtils.currentLine=30998550;
+ //BA.debugLineNum = 30998550;BA.debugLine="ImageViewHeight = mBitmap.Height * r";
 _imageviewheight = (float) (__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getHeight()*_r);
  break; }
 case 5: {
-RDebugUtils.currentLine=30933016;
- //BA.debugLineNum = 30933016;BA.debugLine="ImageViewWidth = mBitmap.Width";
+RDebugUtils.currentLine=30998552;
+ //BA.debugLineNum = 30998552;BA.debugLine="ImageViewWidth = mBitmap.Width";
 _imageviewwidth = (float) (__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getWidth());
-RDebugUtils.currentLine=30933017;
- //BA.debugLineNum = 30933017;BA.debugLine="ImageViewHeight = mBitmap.Height";
+RDebugUtils.currentLine=30998553;
+ //BA.debugLineNum = 30998553;BA.debugLine="ImageViewHeight = mBitmap.Height";
 _imageviewheight = (float) (__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getHeight());
  break; }
 default: {
-RDebugUtils.currentLine=30933019;
- //BA.debugLineNum = 30933019;BA.debugLine="Log(\"Invalid resize mode: \"  & mResizeMode)";
-__c.LogImpl("930933019","Invalid resize mode: "+__ref._mresizemode /*String*/ ,0);
+RDebugUtils.currentLine=30998555;
+ //BA.debugLineNum = 30998555;BA.debugLine="Log(\"Invalid resize mode: \"  & mResizeMode)";
+__c.LogImpl("930998555","Invalid resize mode: "+__ref._mresizemode /*String*/ ,0);
  break; }
 }
 ;
-RDebugUtils.currentLine=30933021;
- //BA.debugLineNum = 30933021;BA.debugLine="iv.SetLayoutAnimated(0, Round(mBase.Width / 2 - I";
+RDebugUtils.currentLine=30998557;
+ //BA.debugLineNum = 30998557;BA.debugLine="iv.SetLayoutAnimated(0, Round(mBase.Width / 2 - I";
 __ref._iv /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),(int) (__c.Round(__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth()/(double)2-_imageviewwidth/(double)2)),(int) (__c.Round(__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight()/(double)2-_imageviewheight/(double)2)),(int) (__c.Round(_imageviewwidth)),(int) (__c.Round(_imageviewheight)));
-RDebugUtils.currentLine=30933022;
- //BA.debugLineNum = 30933022;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30998558;
+ //BA.debugLineNum = 30998558;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.B4APagesNavBar.b4ximageview __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4ximageview";
-RDebugUtils.currentLine=30277632;
- //BA.debugLineNum = 30277632;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=30277633;
- //BA.debugLineNum = 30277633;BA.debugLine="Private mEventName As String 'ignore";
+RDebugUtils.currentLine=30343168;
+ //BA.debugLineNum = 30343168;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=30343169;
+ //BA.debugLineNum = 30343169;BA.debugLine="Private mEventName As String 'ignore";
 _meventname = "";
-RDebugUtils.currentLine=30277634;
- //BA.debugLineNum = 30277634;BA.debugLine="Private mCallBack As Object 'ignore";
+RDebugUtils.currentLine=30343170;
+ //BA.debugLineNum = 30343170;BA.debugLine="Private mCallBack As Object 'ignore";
 _mcallback = new Object();
-RDebugUtils.currentLine=30277635;
- //BA.debugLineNum = 30277635;BA.debugLine="Public mBase As B4XView";
+RDebugUtils.currentLine=30343171;
+ //BA.debugLineNum = 30343171;BA.debugLine="Public mBase As B4XView";
 _mbase = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=30277636;
- //BA.debugLineNum = 30277636;BA.debugLine="Private xui As XUI 'ignore";
+RDebugUtils.currentLine=30343172;
+ //BA.debugLineNum = 30343172;BA.debugLine="Private xui As XUI 'ignore";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=30277637;
- //BA.debugLineNum = 30277637;BA.debugLine="Public Tag As Object";
+RDebugUtils.currentLine=30343173;
+ //BA.debugLineNum = 30343173;BA.debugLine="Public Tag As Object";
 _tag = new Object();
-RDebugUtils.currentLine=30277638;
- //BA.debugLineNum = 30277638;BA.debugLine="Private iv As B4XView";
+RDebugUtils.currentLine=30343174;
+ //BA.debugLineNum = 30343174;BA.debugLine="Private iv As B4XView";
 _iv = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=30277639;
- //BA.debugLineNum = 30277639;BA.debugLine="Private mResizeMode As String";
+RDebugUtils.currentLine=30343175;
+ //BA.debugLineNum = 30343175;BA.debugLine="Private mResizeMode As String";
 _mresizemode = "";
-RDebugUtils.currentLine=30277640;
- //BA.debugLineNum = 30277640;BA.debugLine="Private mRound As Boolean";
+RDebugUtils.currentLine=30343176;
+ //BA.debugLineNum = 30343176;BA.debugLine="Private mRound As Boolean";
 _mround = false;
-RDebugUtils.currentLine=30277641;
- //BA.debugLineNum = 30277641;BA.debugLine="Private mBitmap As B4XBitmap";
+RDebugUtils.currentLine=30343177;
+ //BA.debugLineNum = 30343177;BA.debugLine="Private mBitmap As B4XBitmap";
 _mbitmap = new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper();
-RDebugUtils.currentLine=30277642;
- //BA.debugLineNum = 30277642;BA.debugLine="Public mBackgroundColor As Int";
+RDebugUtils.currentLine=30343178;
+ //BA.debugLineNum = 30343178;BA.debugLine="Public mBackgroundColor As Int";
 _mbackgroundcolor = 0;
-RDebugUtils.currentLine=30277643;
- //BA.debugLineNum = 30277643;BA.debugLine="Private mCornersRadius As Int";
+RDebugUtils.currentLine=30343179;
+ //BA.debugLineNum = 30343179;BA.debugLine="Private mCornersRadius As Int";
 _mcornersradius = 0;
-RDebugUtils.currentLine=30277644;
- //BA.debugLineNum = 30277644;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30343180;
+ //BA.debugLineNum = 30343180;BA.debugLine="End Sub";
 return "";
 }
 public String  _clear(b4a.B4APagesNavBar.b4ximageview __ref) throws Exception{
@@ -220,16 +220,16 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "clear", true))
 	 {return ((String) Debug.delegate(ba, "clear", null));}
-RDebugUtils.currentLine=31064064;
- //BA.debugLineNum = 31064064;BA.debugLine="Public Sub Clear";
-RDebugUtils.currentLine=31064065;
- //BA.debugLineNum = 31064065;BA.debugLine="mBitmap = Null";
+RDebugUtils.currentLine=31129600;
+ //BA.debugLineNum = 31129600;BA.debugLine="Public Sub Clear";
+RDebugUtils.currentLine=31129601;
+ //BA.debugLineNum = 31129601;BA.debugLine="mBitmap = Null";
 __ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/  = (anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(__c.Null));
-RDebugUtils.currentLine=31064066;
- //BA.debugLineNum = 31064066;BA.debugLine="iv.SetBitmap(Null)";
+RDebugUtils.currentLine=31129602;
+ //BA.debugLineNum = 31129602;BA.debugLine="iv.SetBitmap(Null)";
 __ref._iv /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetBitmap((android.graphics.Bitmap)(__c.Null));
-RDebugUtils.currentLine=31064067;
- //BA.debugLineNum = 31064067;BA.debugLine="End Sub";
+RDebugUtils.currentLine=31129603;
+ //BA.debugLineNum = 31129603;BA.debugLine="End Sub";
 return "";
 }
 public String  _designercreateview(b4a.B4APagesNavBar.b4ximageview __ref,Object _base,anywheresoftware.b4a.objects.LabelWrapper _lbl,anywheresoftware.b4a.objects.collections.Map _props) throws Exception{
@@ -238,46 +238,46 @@ RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "designercreateview", true))
 	 {return ((String) Debug.delegate(ba, "designercreateview", new Object[] {_base,_lbl,_props}));}
 anywheresoftware.b4a.objects.ImageViewWrapper _iiv = null;
-RDebugUtils.currentLine=30408704;
- //BA.debugLineNum = 30408704;BA.debugLine="Public Sub DesignerCreateView (Base As Object, Lbl";
-RDebugUtils.currentLine=30408705;
- //BA.debugLineNum = 30408705;BA.debugLine="mBase = Base";
+RDebugUtils.currentLine=30474240;
+ //BA.debugLineNum = 30474240;BA.debugLine="Public Sub DesignerCreateView (Base As Object, Lbl";
+RDebugUtils.currentLine=30474241;
+ //BA.debugLineNum = 30474241;BA.debugLine="mBase = Base";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_base));
-RDebugUtils.currentLine=30408706;
- //BA.debugLineNum = 30408706;BA.debugLine="Tag = mBase.Tag";
+RDebugUtils.currentLine=30474242;
+ //BA.debugLineNum = 30474242;BA.debugLine="Tag = mBase.Tag";
 __ref._tag /*Object*/  = __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getTag();
-RDebugUtils.currentLine=30408707;
- //BA.debugLineNum = 30408707;BA.debugLine="mBase.Tag = Me";
+RDebugUtils.currentLine=30474243;
+ //BA.debugLineNum = 30474243;BA.debugLine="mBase.Tag = Me";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setTag(this);
-RDebugUtils.currentLine=30408708;
- //BA.debugLineNum = 30408708;BA.debugLine="Dim iiv As ImageView";
+RDebugUtils.currentLine=30474244;
+ //BA.debugLineNum = 30474244;BA.debugLine="Dim iiv As ImageView";
 _iiv = new anywheresoftware.b4a.objects.ImageViewWrapper();
-RDebugUtils.currentLine=30408709;
- //BA.debugLineNum = 30408709;BA.debugLine="iiv.Initialize(\"\")";
+RDebugUtils.currentLine=30474245;
+ //BA.debugLineNum = 30474245;BA.debugLine="iiv.Initialize(\"\")";
 _iiv.Initialize(ba,"");
-RDebugUtils.currentLine=30408710;
- //BA.debugLineNum = 30408710;BA.debugLine="iv = iiv";
+RDebugUtils.currentLine=30474246;
+ //BA.debugLineNum = 30474246;BA.debugLine="iv = iiv";
 __ref._iv /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_iiv.getObject()));
-RDebugUtils.currentLine=30408711;
- //BA.debugLineNum = 30408711;BA.debugLine="mRound =Props.Get(\"Round\")";
+RDebugUtils.currentLine=30474247;
+ //BA.debugLineNum = 30474247;BA.debugLine="mRound =Props.Get(\"Round\")";
 __ref._mround /*boolean*/  = BA.ObjectToBoolean(_props.Get((Object)("Round")));
-RDebugUtils.currentLine=30408712;
- //BA.debugLineNum = 30408712;BA.debugLine="mResizeMode = Props.Get(\"ResizeMode\")";
+RDebugUtils.currentLine=30474248;
+ //BA.debugLineNum = 30474248;BA.debugLine="mResizeMode = Props.Get(\"ResizeMode\")";
 __ref._mresizemode /*String*/  = BA.ObjectToString(_props.Get((Object)("ResizeMode")));
-RDebugUtils.currentLine=30408713;
- //BA.debugLineNum = 30408713;BA.debugLine="mBackgroundColor = xui.PaintOrColorToColor(Props.";
+RDebugUtils.currentLine=30474249;
+ //BA.debugLineNum = 30474249;BA.debugLine="mBackgroundColor = xui.PaintOrColorToColor(Props.";
 __ref._mbackgroundcolor /*int*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .PaintOrColorToColor(_props.Get((Object)("BackgroundColor")));
-RDebugUtils.currentLine=30408714;
- //BA.debugLineNum = 30408714;BA.debugLine="mCornersRadius = DipToCurrent(Props.GetDefault(\"C";
+RDebugUtils.currentLine=30474250;
+ //BA.debugLineNum = 30474250;BA.debugLine="mCornersRadius = DipToCurrent(Props.GetDefault(\"C";
 __ref._mcornersradius /*int*/  = __c.DipToCurrent((int)(BA.ObjectToNumber(_props.GetDefault((Object)("CornersRadius"),(Object)(0)))));
-RDebugUtils.currentLine=30408715;
- //BA.debugLineNum = 30408715;BA.debugLine="mBase.AddView(iv, 0, 0, mBase.Width, mBase.Height";
+RDebugUtils.currentLine=30474251;
+ //BA.debugLineNum = 30474251;BA.debugLine="mBase.AddView(iv, 0, 0, mBase.Width, mBase.Height";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .AddView((android.view.View)(__ref._iv /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getObject()),(int) (0),(int) (0),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth(),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight());
-RDebugUtils.currentLine=30408716;
- //BA.debugLineNum = 30408716;BA.debugLine="Update";
+RDebugUtils.currentLine=30474252;
+ //BA.debugLineNum = 30474252;BA.debugLine="Update";
 __ref._update /*String*/ (null);
-RDebugUtils.currentLine=30408717;
- //BA.debugLineNum = 30408717;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30474253;
+ //BA.debugLineNum = 30474253;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper  _getbitmap(b4a.B4APagesNavBar.b4ximageview __ref) throws Exception{
@@ -285,13 +285,13 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "getbitmap", true))
 	 {return ((anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) Debug.delegate(ba, "getbitmap", null));}
-RDebugUtils.currentLine=31195136;
- //BA.debugLineNum = 31195136;BA.debugLine="Public Sub getBitmap As B4XBitmap";
-RDebugUtils.currentLine=31195137;
- //BA.debugLineNum = 31195137;BA.debugLine="Return mBitmap";
+RDebugUtils.currentLine=31260672;
+ //BA.debugLineNum = 31260672;BA.debugLine="Public Sub getBitmap As B4XBitmap";
+RDebugUtils.currentLine=31260673;
+ //BA.debugLineNum = 31260673;BA.debugLine="Return mBitmap";
 if (true) return __ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ ;
-RDebugUtils.currentLine=31195138;
- //BA.debugLineNum = 31195138;BA.debugLine="End Sub";
+RDebugUtils.currentLine=31260674;
+ //BA.debugLineNum = 31260674;BA.debugLine="End Sub";
 return null;
 }
 public int  _getcornersradius(b4a.B4APagesNavBar.b4ximageview __ref) throws Exception{
@@ -299,13 +299,13 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "getcornersradius", true))
 	 {return ((Integer) Debug.delegate(ba, "getcornersradius", null));}
-RDebugUtils.currentLine=30670848;
- //BA.debugLineNum = 30670848;BA.debugLine="Public Sub getCornersRadius As Int";
-RDebugUtils.currentLine=30670849;
- //BA.debugLineNum = 30670849;BA.debugLine="Return mCornersRadius";
+RDebugUtils.currentLine=30736384;
+ //BA.debugLineNum = 30736384;BA.debugLine="Public Sub getCornersRadius As Int";
+RDebugUtils.currentLine=30736385;
+ //BA.debugLineNum = 30736385;BA.debugLine="Return mCornersRadius";
 if (true) return __ref._mcornersradius /*int*/ ;
-RDebugUtils.currentLine=30670850;
- //BA.debugLineNum = 30670850;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30736386;
+ //BA.debugLineNum = 30736386;BA.debugLine="End Sub";
 return 0;
 }
 public String  _getresizemode(b4a.B4APagesNavBar.b4ximageview __ref) throws Exception{
@@ -313,13 +313,13 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "getresizemode", true))
 	 {return ((String) Debug.delegate(ba, "getresizemode", null));}
-RDebugUtils.currentLine=30801920;
- //BA.debugLineNum = 30801920;BA.debugLine="Public Sub getResizeMode As String";
-RDebugUtils.currentLine=30801921;
- //BA.debugLineNum = 30801921;BA.debugLine="Return mResizeMode";
+RDebugUtils.currentLine=30867456;
+ //BA.debugLineNum = 30867456;BA.debugLine="Public Sub getResizeMode As String";
+RDebugUtils.currentLine=30867457;
+ //BA.debugLineNum = 30867457;BA.debugLine="Return mResizeMode";
 if (true) return __ref._mresizemode /*String*/ ;
-RDebugUtils.currentLine=30801922;
- //BA.debugLineNum = 30801922;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30867458;
+ //BA.debugLineNum = 30867458;BA.debugLine="End Sub";
 return "";
 }
 public boolean  _getroundedimage(b4a.B4APagesNavBar.b4ximageview __ref) throws Exception{
@@ -327,13 +327,13 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "getroundedimage", true))
 	 {return ((Boolean) Debug.delegate(ba, "getroundedimage", null));}
-RDebugUtils.currentLine=30539776;
- //BA.debugLineNum = 30539776;BA.debugLine="Public Sub getRoundedImage As Boolean";
-RDebugUtils.currentLine=30539777;
- //BA.debugLineNum = 30539777;BA.debugLine="Return mRound";
+RDebugUtils.currentLine=30605312;
+ //BA.debugLineNum = 30605312;BA.debugLine="Public Sub getRoundedImage As Boolean";
+RDebugUtils.currentLine=30605313;
+ //BA.debugLineNum = 30605313;BA.debugLine="Return mRound";
 if (true) return __ref._mround /*boolean*/ ;
-RDebugUtils.currentLine=30539778;
- //BA.debugLineNum = 30539778;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30605314;
+ //BA.debugLineNum = 30605314;BA.debugLine="End Sub";
 return false;
 }
 public String  _initialize(b4a.B4APagesNavBar.b4ximageview __ref,anywheresoftware.b4a.BA _ba,Object _callback,String _eventname) throws Exception{
@@ -342,16 +342,16 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_callback,_eventname}));}
-RDebugUtils.currentLine=30343168;
- //BA.debugLineNum = 30343168;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
-RDebugUtils.currentLine=30343169;
- //BA.debugLineNum = 30343169;BA.debugLine="mEventName = EventName";
+RDebugUtils.currentLine=30408704;
+ //BA.debugLineNum = 30408704;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
+RDebugUtils.currentLine=30408705;
+ //BA.debugLineNum = 30408705;BA.debugLine="mEventName = EventName";
 __ref._meventname /*String*/  = _eventname;
-RDebugUtils.currentLine=30343170;
- //BA.debugLineNum = 30343170;BA.debugLine="mCallBack = Callback";
+RDebugUtils.currentLine=30408706;
+ //BA.debugLineNum = 30408706;BA.debugLine="mCallBack = Callback";
 __ref._mcallback /*Object*/  = _callback;
-RDebugUtils.currentLine=30343171;
- //BA.debugLineNum = 30343171;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30408707;
+ //BA.debugLineNum = 30408707;BA.debugLine="End Sub";
 return "";
 }
 public String  _setbitmap(b4a.B4APagesNavBar.b4ximageview __ref,anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper _bmp) throws Exception{
@@ -359,19 +359,19 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "setbitmap", true))
 	 {return ((String) Debug.delegate(ba, "setbitmap", new Object[] {_bmp}));}
-RDebugUtils.currentLine=31129600;
- //BA.debugLineNum = 31129600;BA.debugLine="Public Sub setBitmap(Bmp As B4XBitmap)";
-RDebugUtils.currentLine=31129601;
- //BA.debugLineNum = 31129601;BA.debugLine="mBitmap = Bmp";
+RDebugUtils.currentLine=31195136;
+ //BA.debugLineNum = 31195136;BA.debugLine="Public Sub setBitmap(Bmp As B4XBitmap)";
+RDebugUtils.currentLine=31195137;
+ //BA.debugLineNum = 31195137;BA.debugLine="mBitmap = Bmp";
 __ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/  = _bmp;
-RDebugUtils.currentLine=31129602;
- //BA.debugLineNum = 31129602;BA.debugLine="XUIViewsUtils.SetBitmapAndFill(iv, Bmp)";
+RDebugUtils.currentLine=31195138;
+ //BA.debugLineNum = 31195138;BA.debugLine="XUIViewsUtils.SetBitmapAndFill(iv, Bmp)";
 _xuiviewsutils._setbitmapandfill /*String*/ (ba,__ref._iv /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ,_bmp);
-RDebugUtils.currentLine=31129603;
- //BA.debugLineNum = 31129603;BA.debugLine="Update";
+RDebugUtils.currentLine=31195139;
+ //BA.debugLineNum = 31195139;BA.debugLine="Update";
 __ref._update /*String*/ (null);
-RDebugUtils.currentLine=31129604;
- //BA.debugLineNum = 31129604;BA.debugLine="End Sub";
+RDebugUtils.currentLine=31195140;
+ //BA.debugLineNum = 31195140;BA.debugLine="End Sub";
 return "";
 }
 public String  _setcornersradius(b4a.B4APagesNavBar.b4ximageview __ref,int _i) throws Exception{
@@ -379,16 +379,16 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "setcornersradius", true))
 	 {return ((String) Debug.delegate(ba, "setcornersradius", new Object[] {_i}));}
-RDebugUtils.currentLine=30736384;
- //BA.debugLineNum = 30736384;BA.debugLine="Public Sub setCornersRadius (i As Int)";
-RDebugUtils.currentLine=30736385;
- //BA.debugLineNum = 30736385;BA.debugLine="mCornersRadius = i";
+RDebugUtils.currentLine=30801920;
+ //BA.debugLineNum = 30801920;BA.debugLine="Public Sub setCornersRadius (i As Int)";
+RDebugUtils.currentLine=30801921;
+ //BA.debugLineNum = 30801921;BA.debugLine="mCornersRadius = i";
 __ref._mcornersradius /*int*/  = _i;
-RDebugUtils.currentLine=30736386;
- //BA.debugLineNum = 30736386;BA.debugLine="UpdateClip";
+RDebugUtils.currentLine=30801922;
+ //BA.debugLineNum = 30801922;BA.debugLine="UpdateClip";
 __ref._updateclip /*String*/ (null);
-RDebugUtils.currentLine=30736387;
- //BA.debugLineNum = 30736387;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30801923;
+ //BA.debugLineNum = 30801923;BA.debugLine="End Sub";
 return "";
 }
 public String  _updateclip(b4a.B4APagesNavBar.b4ximageview __ref) throws Exception{
@@ -397,28 +397,28 @@ RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "updateclip", true))
 	 {return ((String) Debug.delegate(ba, "updateclip", null));}
 anywheresoftware.b4j.object.JavaObject _jo = null;
-RDebugUtils.currentLine=31260672;
- //BA.debugLineNum = 31260672;BA.debugLine="Private Sub UpdateClip";
-RDebugUtils.currentLine=31260673;
- //BA.debugLineNum = 31260673;BA.debugLine="If mRound Then";
+RDebugUtils.currentLine=31326208;
+ //BA.debugLineNum = 31326208;BA.debugLine="Private Sub UpdateClip";
+RDebugUtils.currentLine=31326209;
+ //BA.debugLineNum = 31326209;BA.debugLine="If mRound Then";
 if (__ref._mround /*boolean*/ ) { 
-RDebugUtils.currentLine=31260674;
- //BA.debugLineNum = 31260674;BA.debugLine="mBase.SetColorAndBorder(mBackgroundColor, 0, 0,";
+RDebugUtils.currentLine=31326210;
+ //BA.debugLineNum = 31326210;BA.debugLine="mBase.SetColorAndBorder(mBackgroundColor, 0, 0,";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetColorAndBorder(__ref._mbackgroundcolor /*int*/ ,(int) (0),(int) (0),(int) (__c.Min(__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth()/(double)2,__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight()/(double)2)));
  }else {
-RDebugUtils.currentLine=31260676;
- //BA.debugLineNum = 31260676;BA.debugLine="mBase.SetColorAndBorder(mBackgroundColor, 0, 0,";
+RDebugUtils.currentLine=31326212;
+ //BA.debugLineNum = 31326212;BA.debugLine="mBase.SetColorAndBorder(mBackgroundColor, 0, 0,";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetColorAndBorder(__ref._mbackgroundcolor /*int*/ ,(int) (0),(int) (0),__ref._mcornersradius /*int*/ );
  };
-RDebugUtils.currentLine=31260698;
- //BA.debugLineNum = 31260698;BA.debugLine="Dim jo As JavaObject = mBase";
+RDebugUtils.currentLine=31326234;
+ //BA.debugLineNum = 31326234;BA.debugLine="Dim jo As JavaObject = mBase";
 _jo = new anywheresoftware.b4j.object.JavaObject();
 _jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getObject()));
-RDebugUtils.currentLine=31260699;
- //BA.debugLineNum = 31260699;BA.debugLine="jo.RunMethod(\"setClipToOutline\", Array(mRound Or";
+RDebugUtils.currentLine=31326235;
+ //BA.debugLineNum = 31326235;BA.debugLine="jo.RunMethod(\"setClipToOutline\", Array(mRound Or";
 _jo.RunMethod("setClipToOutline",new Object[]{(Object)(__ref._mround /*boolean*/  || __ref._mcornersradius /*int*/ >0)});
-RDebugUtils.currentLine=31260701;
- //BA.debugLineNum = 31260701;BA.debugLine="End Sub";
+RDebugUtils.currentLine=31326237;
+ //BA.debugLineNum = 31326237;BA.debugLine="End Sub";
 return "";
 }
 public String  _setresizemode(b4a.B4APagesNavBar.b4ximageview __ref,String _s) throws Exception{
@@ -426,20 +426,20 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "setresizemode", true))
 	 {return ((String) Debug.delegate(ba, "setresizemode", new Object[] {_s}));}
-RDebugUtils.currentLine=30867456;
- //BA.debugLineNum = 30867456;BA.debugLine="Public Sub setResizeMode(s As String)";
-RDebugUtils.currentLine=30867457;
- //BA.debugLineNum = 30867457;BA.debugLine="If s = mResizeMode Then Return";
+RDebugUtils.currentLine=30932992;
+ //BA.debugLineNum = 30932992;BA.debugLine="Public Sub setResizeMode(s As String)";
+RDebugUtils.currentLine=30932993;
+ //BA.debugLineNum = 30932993;BA.debugLine="If s = mResizeMode Then Return";
 if ((_s).equals(__ref._mresizemode /*String*/ )) { 
 if (true) return "";};
-RDebugUtils.currentLine=30867458;
- //BA.debugLineNum = 30867458;BA.debugLine="mResizeMode = s";
+RDebugUtils.currentLine=30932994;
+ //BA.debugLineNum = 30932994;BA.debugLine="mResizeMode = s";
 __ref._mresizemode /*String*/  = _s;
-RDebugUtils.currentLine=30867459;
- //BA.debugLineNum = 30867459;BA.debugLine="Update";
+RDebugUtils.currentLine=30932995;
+ //BA.debugLineNum = 30932995;BA.debugLine="Update";
 __ref._update /*String*/ (null);
-RDebugUtils.currentLine=30867460;
- //BA.debugLineNum = 30867460;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30932996;
+ //BA.debugLineNum = 30932996;BA.debugLine="End Sub";
 return "";
 }
 public String  _setroundedimage(b4a.B4APagesNavBar.b4ximageview __ref,boolean _b) throws Exception{
@@ -447,20 +447,20 @@ __ref = this;
 RDebugUtils.currentModule="b4ximageview";
 if (Debug.shouldDelegate(ba, "setroundedimage", true))
 	 {return ((String) Debug.delegate(ba, "setroundedimage", new Object[] {_b}));}
-RDebugUtils.currentLine=30605312;
- //BA.debugLineNum = 30605312;BA.debugLine="Public Sub setRoundedImage (b As Boolean)";
-RDebugUtils.currentLine=30605313;
- //BA.debugLineNum = 30605313;BA.debugLine="If b = mRound Then Return";
+RDebugUtils.currentLine=30670848;
+ //BA.debugLineNum = 30670848;BA.debugLine="Public Sub setRoundedImage (b As Boolean)";
+RDebugUtils.currentLine=30670849;
+ //BA.debugLineNum = 30670849;BA.debugLine="If b = mRound Then Return";
 if (_b==__ref._mround /*boolean*/ ) { 
 if (true) return "";};
-RDebugUtils.currentLine=30605314;
- //BA.debugLineNum = 30605314;BA.debugLine="mRound = b";
+RDebugUtils.currentLine=30670850;
+ //BA.debugLineNum = 30670850;BA.debugLine="mRound = b";
 __ref._mround /*boolean*/  = _b;
-RDebugUtils.currentLine=30605315;
- //BA.debugLineNum = 30605315;BA.debugLine="UpdateClip";
+RDebugUtils.currentLine=30670851;
+ //BA.debugLineNum = 30670851;BA.debugLine="UpdateClip";
 __ref._updateclip /*String*/ (null);
-RDebugUtils.currentLine=30605316;
- //BA.debugLineNum = 30605316;BA.debugLine="End Sub";
+RDebugUtils.currentLine=30670852;
+ //BA.debugLineNum = 30670852;BA.debugLine="End Sub";
 return "";
 }
 }

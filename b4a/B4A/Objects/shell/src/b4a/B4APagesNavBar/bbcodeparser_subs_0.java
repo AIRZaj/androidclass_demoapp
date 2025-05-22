@@ -160,7 +160,7 @@ Debug.JustUpdateDeviceLine();
 _s = (RemoteObject.concat(RemoteObject.createImmutable("Error (position - "),bbcodeparser.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((__ref.getField(true,"_start" /*RemoteObject*/ )))),RemoteObject.createImmutable("): "),bbcodeparser.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((_msg))),RemoteObject.createImmutable("")));Debug.locals.put("s", _s);Debug.locals.put("s", _s);
  BA.debugLineNum = 157;BA.debugLine="LogColor(s, Colors.Red)";
 Debug.JustUpdateDeviceLine();
-bbcodeparser.__c.runVoidMethod ("LogImpl","912058627",_s,bbcodeparser.__c.getField(false,"Colors").getField(true,"Red"));
+bbcodeparser.__c.runVoidMethod ("LogImpl","912124163",_s,bbcodeparser.__c.getField(false,"Colors").getField(true,"Red"));
  BA.debugLineNum = 161;BA.debugLine="ErrorString.Append(s).Append(CRLF)";
 Debug.JustUpdateDeviceLine();
 __ref.getField(false,"_errorstring" /*RemoteObject*/ ).runMethod(false,"Append",(Object)(_s)).runVoidMethod ("Append",(Object)(bbcodeparser.__c.getField(true,"CRLF")));
@@ -1310,7 +1310,7 @@ Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean("=",__ref.getField(false,"_mtextengine" /*RemoteObject*/ ).getField(false,"_customfonts" /*RemoteObject*/ ).runMethod(true,"ContainsKey",(Object)((_name))),bbcodeparser.__c.getField(true,"False"))) { 
  BA.debugLineNum = 252;BA.debugLine="Log(\"Font missing from TextEngine.CustomFonts";
 Debug.JustUpdateDeviceLine();
-bbcodeparser.__c.runVoidMethod ("LogImpl","912320829",RemoteObject.concat(RemoteObject.createImmutable("Font missing from TextEngine.CustomFonts: "),_name),0);
+bbcodeparser.__c.runVoidMethod ("LogImpl","912386365",RemoteObject.concat(RemoteObject.createImmutable("Font missing from TextEngine.CustomFonts: "),_name),0);
  }else {
  BA.debugLineNum = 254;BA.debugLine="Dim NewFont As B4XFont =  mTextEngine.CustomF";
 Debug.JustUpdateDeviceLine();
